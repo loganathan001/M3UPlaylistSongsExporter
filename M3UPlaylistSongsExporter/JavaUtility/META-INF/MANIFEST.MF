@@ -4,6 +4,5 @@ Bundle-Name: JavaUtility
 Bundle-SymbolicName: JavaUtility
 Bundle-Version: 1.0.0.qualifier
 Export-Package: my.utility.winamp
-Require-Bundle: org.eclipse.swt,
- org.eclipse.jface,
- org.eclipse.core.runtime
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui

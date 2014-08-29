@@ -8,8 +8,6 @@ import org.eclipse.jface.wizard.ProgressMonitorPart;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.ModifyEvent;
 import org.eclipse.swt.events.ModifyListener;
-import org.eclipse.swt.events.MouseAdapter;
-import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.FillLayout;
@@ -21,7 +19,6 @@ import org.eclipse.swt.widgets.DirectoryDialog;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Link;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.wb.swt.SWTResourceManager;
@@ -40,7 +37,7 @@ public class WinAmpPlaylistExporterWindow {
 	private Button btnExport;
 	private Label label;
 	private Button btnReplaceExistingFiles;
-	private Link link;
+	private Label copyRight;
 	private Label lblNewLabel;
 	private Composite composite_1;
 	private Label lblError;
@@ -173,15 +170,8 @@ public class WinAmpPlaylistExporterWindow {
 		buttonComposite.setLayoutData(new GridData(SWT.RIGHT, SWT.BOTTOM, true,
 				false, 1, 1));
 
-		link = new Link(buttonComposite, SWT.NONE);
-		link.setText("<a>(c) 2014 Loganathan. S</a>");// href='mailto:loganathan001@gmail.com?Subject=Hello%20Loganathan'
-		link.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseDown(MouseEvent e) {
-				// TODO Auto-generated method stub
-
-			}
-		});
+		copyRight = new Label(buttonComposite, SWT.NONE);
+		copyRight.setText("(c) 2014 Loganathan.S (GPL)");// href='mailto:loganathan001@gmail.com?Subject=Hello%20Loganathan'
 
 		btnClose = new Button(buttonComposite, SWT.NONE);
 		btnClose.addSelectionListener(new SelectionAdapter() {
