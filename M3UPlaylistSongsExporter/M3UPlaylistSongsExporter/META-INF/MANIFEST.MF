@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: M3UPlaylistSongsExporter
+Bundle-SymbolicName: M3UPlaylistSongsExporter;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: my.utility.winamp
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

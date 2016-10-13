@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: JavaUtility
-Bundle-SymbolicName: JavaUtility
-Bundle-Version: 1.0.0.qualifier
-Export-Package: my.utility.winamp
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.ui
